@@ -14,7 +14,7 @@
 	},
 	"homepage": "https://github.com/HyoJip/css#readme",
 	"scripts": {
-		"start": "parcel index.html"
+		"start": "parcel proj2/index.html"
 	},
 	"dependencies": {
 		"postcss-preset-env": "^6.7.0",
