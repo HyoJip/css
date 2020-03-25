@@ -5,7 +5,7 @@
 ![project2 capture](./proj2/image.JPG)
 
 # project3
-![project3 capture](./proj3/image.JPG)
+![project3 capture](./proj3/iamge.JPG)
 
 # project4
 ![project4 capture](./proj4/image.JPG)
