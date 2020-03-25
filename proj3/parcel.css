@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root {
+}
+
+body {
+	padding: 10px;
+	font-size: 20px;
+}
+
+header {
+	margin: 40px 0 25px 0;
+}
+
+header h1 {
+	font-size: 2em;
+	font-weight: 700;
+}
+
+.update_wrap {
+	border-top: 1px solid rgb(198, 198, 198);
+	border-bottom: 1px solid rgb(198, 198, 198);
+	padding: 20px 0;
+}
+
+.update_wrap .update_title {
+	font-size: 1.3em;
+	font-weight: 700;
+	line-height: 1.45em;
+}
+
+.update_wrap .update_desc {
+	font-size: 0.9em;
+	color: rgb(119, 119, 119);
+	margin-bottom: 0.8em;
+}
+
+.update_wrap .update_categorys {
+	display: grid;
+	overflow: scroll;
+	grid-auto-flow: column;
+	grid-gap: 0.5em;
+	grid-auto-columns: minmax(40vw, 1fr);
+	grid-template-rows: 22vh;
+}
+
+.update_wrap .update_categorys .update_category {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-rows: 8fr 1fr;
+}
+
+.update_wrap .update_categorys .update_category .category_img {
+	border-radius: 15px;
+	height: 80%;
+	width: 100%;
+}
+
+.update_wrap .update_categorys .update_category .category_name {
+	font-size: 0.9em;
+	line-height: 1.2em;
+	font-weight: 700;
+}
+
+.writers_wrap {
+	margin: 15px 0;
+}
+
+.writers_wrap h2 {
+	font-size: 1.3em;
+	font-weight: 700;
+	line-height: 1.45em;
+}
+
+.writers_wrap .writers_lists {
+	display: grid;
+	grid-auto-columns: minmax(45vw, 1fr);
+	grid-auto-flow: column;
+	grid-gap: 0.5em;
+	overflow: scroll;
+	padding: 0.5em 0.2em;
+}
+
+.writers_wrap .writers_lists .writer_box {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 8vh;
+	grid-gap: 0.5em;
+	align-items: center;
+	justify-items: center;
+	place-items: center;
+	align-content: center;
+	justify-content: center;
+	place-content: center center;
+
+	padding: 0.5em;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.writers_wrap .writers_lists .writer_box .writer_img {
+	border-radius: 50%;
+	background-position: cover;
+	height: 80%;
+	width: 100%;
+}
+
+.writers_wrap .writers_lists .writer_box .writer_info h4 {
+	font-size: 0.7em;
+	color: rgb(119, 119, 119);
+	font-weight: 700;
+	line-height: 1.5em;
+}
+
+.writers_wrap .writers_lists .writer_box .writer_info p {
+	font-size: 0.5em;
+	color: rgb(119, 119, 119);
+}
+
+.newinfo_wrap {
+	margin: 20px 0;
+}
+
+.newinfo_wrap h2 {
+	font-size: 1.3em;
+	font-weight: 700;
+	line-height: 1.45em;
+}
+
+.newinfo_wrap .newinfo_lists {
+	display: grid;
+	grid-gap: 0.5em;
+}
+
+.newinfo_wrap .newinfo_list {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 1em;
+	align-items: center;
+	justify-items: start;
+	place-items: center start;
+}
+
+.newinfo_wrap .newinfo_list .newinfo_img {
+	height: 12vh;
+	width: 12vh;
+	border-radius: 15px;
+}
+
+.newinfo_wrap .newinfo_list span {
+	display: block;
+	line-height: 1.5em;
+}
+
+.newinfo_wrap .newinfo_list .desc_title {
+	font-weight: 700;
+}
+
+.newinfo_wrap .newinfo_list .desc_writer {
+	font-size: 0.8em;
+	color: rgb(119, 119, 119);
+}
+
+.newinfo_wrap .newinfo_list .desc_body {
+	font-size: 0.7em;
+	color: rgb(119, 119, 119);
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

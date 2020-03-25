@@ -1,0 +1,162 @@
+@import reset.css;
+
+:root {
+}
+
+body {
+	padding: 10px;
+	font-size: 20px;
+}
+
+header {
+	margin: 40px 0 25px 0;
+
+	& h1 {
+		font-size: 2em;
+		font-weight: 700;
+	}
+}
+
+.update_wrap {
+	border-top: 1px solid gray(80);
+	border-bottom: 1px solid gray(80);
+	padding: 20px 0;
+
+	& .update_title {
+		font-size: 1.3em;
+		font-weight: 700;
+		line-height: 1.45em;
+	}
+
+	& .update_desc {
+		font-size: 0.9em;
+		color: gray(50);
+		margin-bottom: 0.8em;
+	}
+
+	& .update_categorys {
+		display: grid;
+		overflow: scroll;
+		grid-auto-flow: column;
+		grid-gap: 0.5em;
+		grid-auto-columns: minmax(40vw, 1fr);
+		grid-template-rows: 22vh;
+
+		& .update_category {
+			display: grid;
+			grid-auto-flow: column;
+			grid-template-rows: 8fr 1fr;
+
+			& .category_img {
+				border-radius: 15px;
+				height: 80%;
+				width: 100%;
+			}
+
+			& .category_name {
+				font-size: 0.9em;
+				line-height: 1.2em;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.writers_wrap {
+	margin: 15px 0;
+
+	& h2 {
+		font-size: 1.3em;
+		font-weight: 700;
+		line-height: 1.45em;
+	}
+
+	& .writers_lists {
+		display: grid;
+		grid-auto-columns: minmax(45vw, 1fr);
+		grid-auto-flow: column;
+		grid-gap: 0.5em;
+		overflow: scroll;
+		padding: 0.5em 0.2em;
+
+		& .writer_box {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			grid-template-rows: 8vh;
+			grid-gap: 0.5em;
+			place-items: center;
+			place-content: center center;
+
+			padding: 0.5em;
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+			& .writer_img {
+				border-radius: 50%;
+				background-position: cover;
+				height: 80%;
+				width: 100%;
+			}
+
+			& .writer_info {
+				& h4 {
+					font-size: 0.7em;
+					color: gray(50);
+					font-weight: 700;
+					line-height: 1.5em;
+				}
+
+				& p {
+					font-size: 0.5em;
+					color: gray(50);
+				}
+			}
+		}
+	}
+}
+
+.newinfo_wrap {
+	margin: 20px 0;
+
+	& h2 {
+		font-size: 1.3em;
+		font-weight: 700;
+		line-height: 1.45em;
+	}
+
+	& .newinfo_lists {
+		display: grid;
+		grid-gap: 0.5em;
+	}
+
+	& .newinfo_list {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		grid-gap: 1em;
+		place-items: center start;
+
+		& .newinfo_img {
+			height: 12vh;
+			width: 12vh;
+			border-radius: 15px;
+		}
+
+		& span {
+			display: block;
+			line-height: 1.5em;
+		}
+
+		& .desc_title {
+			font-weight: 700;
+		}
+
+		& .desc_writer {
+			font-size: 0.8em;
+			color: gray(50);
+		}
+
+		& .desc_body {
+			font-size: 0.7em;
+			color: gray(50);
+		}
+	}
+}
