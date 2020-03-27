@@ -1,0 +1,135 @@
+@import reset.css;
+
+:root {
+	--padding_left: 20vh;
+}
+
+body {
+	background-color: #fbebeb;
+	font-weight: bold;
+	font-family: "Baloo 2", cursive;
+}
+
+.header_wrap {
+	display: flex;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 15px 30px;
+	justify-content: space-between;
+	align-items: center;
+
+	& .header_logo {
+		font-size: 1.5em;
+	}
+
+	& .header_nav {
+		padding: 0 20px;
+		text-decoration: none;
+		color: inherit;
+		color: gray(50);
+		font-size: 0.8em;
+	}
+
+	& .header_btns {
+		color: gray(50);
+		font-size: 0.8em;
+
+		& i {
+			padding-right: 20px;
+		}
+	}
+}
+
+.main_wrap {
+	display: grid;
+	grid: 100vh / repeat(2, 1fr);
+
+	& .main_photo {
+		background-image: url("https://images.unsplash.com/photo-1429087969512-1e85aab2683d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80");
+		background-size: cover;
+		background-position: center center;
+		display: flex;
+		align-items: center;
+
+		& .page_number {
+			font-size: 0.6em;
+			padding-left: 15px;
+			display: flex;
+			flex-direction: column;
+
+			& i {
+				padding: 10px;
+				color: gray(30);
+			}
+		}
+	}
+
+	& .main_content {
+		display: flex;
+		flex-direction: column;
+
+		& .main_title {
+			position: relative;
+			font-size: 3em;
+			margin: 25vh 0 var(--padding_left) 20vh;
+
+			& .point {
+				position: absolute;
+				font-size: 8px;
+				left: 133px;
+				top: 2px;
+			}
+		}
+
+		& .main_span {
+			position: absolute;
+			top: 40%;
+			font-size: 0.8em;
+			transform: rotate(270deg);
+		}
+
+		& .main_pages {
+			padding-left: var(--padding_left);
+
+			& .main_current-page {
+				position: relative;
+				font-size: 2.5em;
+
+				& .point {
+					position: absolute;
+					font-size: 8px;
+					left: 7px;
+					top: 3px;
+				}
+			}
+
+			& .main_total-pages {
+				color: gray(65);
+			}
+		}
+
+		& .navigation {
+			margin-top: auto;
+			padding: 10px 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: white;
+
+			& .navigation_arrow {
+				font-size: 30px;
+				padding: 10px;
+				line-height: 50px;
+				color: grsay(40);
+			}
+
+			& .navigation_icon {
+				color: gray(65);
+				font-size: 1.2em;
+				padding: 5px;
+			}
+		}
+	}
+}

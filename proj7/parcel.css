@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	font-weight: bold;
+}
+
+.header {
+	height: 9vh;
+	display: flex;
+}
+
+.header .header_menu {
+	width: 9vh;
+	background-color: #353d3f;
+	color: white;
+	font-size: 1.8em;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.header .header_title {
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+}
+
+.main {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.main .main_info {
+	padding-left: 9vh;
+	margin-right: -300px;
+}
+
+.main .main_info .main_titles {
+	height: 91vh;
+	display: grid;
+	grid: 5fr 1fr 1fr 3fr / 1fr;
+}
+
+.main .main_info .main_titles .main_pre-title {
+	color: rgb(119, 119, 119);
+	font-size: 0.8em;
+	align-self: flex-end;
+}
+
+.main .main_info .main_titles .main_title {
+	font-size: 9em;
+	line-height: 1.5em;
+}
+
+.main .main_info .main_titles .main_sub-title {
+	color: rgb(119, 119, 119);
+	width: 28vw;
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+
+.main .main_info .main_titles .main_link {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: inherit;
+	align-self: center;
+}
+
+.main .main_photo {
+	background-image: url("https://images.unsplash.com/photo-1499988921418-b7df40ff03f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	z-index: -1;
+}
+
+.main .main_photo .main_navigation {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.main .main_photo .main_navigation span {
+	padding: 0 10px;
+}
+
+.main .main_photo .main_navigation .navigation_arrow {
+	font-size: 1.5em;
+}
+
+.main .main_photo .main_navigation .navigation_pages {
+	font-size: 0.8em;
+}
+
+.aside {
+	position: absolute;
+	top: 100px;
+	right: 1px;
+	color: rgb(119, 119, 119);
+	transform: rotate(270deg);
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

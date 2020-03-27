@@ -1,0 +1,121 @@
+@import reset.css;
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap");
+
+:root {
+	--text_shodow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee,
+		1px 1px 1px #ccc, 2px 1px 1px #eee, 1px 3px 1px #ccc, 3px 1px 1px #eee, 2px 1px 1px #ccc,
+		1px 1px 1px #eee, 1px 1px 1px #ccc, 1px 1px 1px #eee, 1px 1px 1px #ccc;
+}
+
+body {
+	font-family: "Nunito Sans", sans-serif;
+}
+
+.header {
+	padding: 20px 50px;
+	height: 6vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	& .header_menu {
+		font-weight: bold;
+		transform: rotate(90deg);
+	}
+
+	& .header_name {
+		letter-spacing: -2px;
+
+		& .bolder {
+			font-weight: bold;
+		}
+	}
+}
+
+.gallery_wrap {
+	background-color: #eeeff5;
+	width: 100%;
+
+	& .gallery_grid {
+		max-width: 900px;
+		height: 250px;
+		display: grid;
+		grid-gap: 25px;
+		grid: 180px / auto-flow 1fr;
+		margin: 0 auto;
+		align-content: center;
+	}
+
+	& .gallery_item {
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		background-size: cover;
+		background-position: center center;
+	}
+
+	& .gallery_item:first-child {
+		background-image: url("https://i.pinimg.com/236x/46/7d/f9/467df97c03fca7b5230053c921145591.jpg");
+	}
+
+	& .gallery_item:nth-child(2) {
+		background-image: url("https://i.pinimg.com/564x/9b/70/1c/9b701c76b9a4b1e71dcf0a8bfa534feb.jpg");
+	}
+
+	& .gallery_item:last-child {
+		background-image: url("https://i.pinimg.com/236x/14/9f/59/149f5923cc03c810dd573520c58233ca.jpg");
+	}
+}
+
+.content {
+	max-width: 900px;
+	margin: 50px auto;
+	display: grid;
+	grid: 1fr / auto-flow 1fr;
+	grid-gap: 12vw;
+
+	& .content_column {
+		& .content_title {
+			font-weight: bold;
+			font-size: 1.5em;
+			text-transform: uppercase;
+			text-shadow: var(--text_shodow);
+		}
+
+		& .content_lists {
+			display: flex;
+			margin: 22px 0;
+
+			& .content_list {
+				display: flex;
+				flex-direction: column;
+				margin-right: 40px;
+
+				& .list_title {
+					font-weight: bold;
+					font-size: 0.7em;
+				}
+
+				& .list_value {
+					font-size: 0.7em;
+					font-weight: bold;
+					line-height: 1.5em;
+					color: gray(50);
+				}
+			}
+		}
+
+		& p {
+			font-size: 0.7em;
+			color: gray(50);
+			margin: 20px 0;
+		}
+
+		& .content_link {
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 0.9em;
+			color: inherit;
+			padding: 3px 0;
+			border-bottom: 2px solid rgba(72, 52, 212, 0.7);
+		}
+	}
+}
