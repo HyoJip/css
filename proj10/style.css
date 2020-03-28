@@ -1,0 +1,149 @@
+@import reset.css;
+
+:root {
+	--grayColor: gray(60);
+}
+
+body {
+	font-family: "Comic Neue", cursive;
+	font-weight: bold;
+}
+
+.gray {
+	color: var(--grayColor);
+}
+
+.header_wrap {
+	display: grid;
+	grid-template-columns: 2fr 5fr 1fr;
+	padding: 60px 30px;
+	height: 80px;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.header_wrap .header_title {
+	font-size: 1.3em;
+}
+
+.header_wrap .header_small {
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+
+.header_small .small_name {
+	margin-right: 15px;
+}
+
+.header_nav {
+	justify-self: center;
+}
+
+.header_nav .fa-heart {
+	font-size: 0.8em;
+	margin-right: 20px;
+}
+
+.header_nav .nav_menu {
+	display: inline-block;
+	transform: rotate(90deg);
+}
+
+.main_wrap {
+	display: grid;
+	grid-template-columns: 3fr 4fr;
+	height: 100vh;
+	padding: 120px 0 60px 0;
+	margin-top: -120px;
+	box-sizing: border-box;
+}
+
+.main_left {
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+	padding-left: 30px;
+	align-items: end;
+}
+
+.main_title {
+	font-size: 5em;
+}
+
+.main_sub-title {
+	font-size: 0.9em;
+	width: 80%;
+	line-height: 1.5em;
+	margin: 30px 0;
+}
+
+.main_detail i {
+	background-color: rgba(0, 0, 0, 0.08);
+	text-align: center;
+	border-radius: 50%;
+	font-size: 0.8em;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	margin-right: 25px;
+}
+
+.main_complain i {
+	background-color: rgba(0, 0, 0, 0.08);
+	text-align: center;
+	border-radius: 50%;
+	font-size: 0.8em;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 25px;
+}
+
+.main_right {
+	display: grid;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 55%;
+	height: 100%;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.main_column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.main_column .person {
+	margin: 20px 5px;
+	line-height: 1.5em;
+	font-size: 0.9em;
+}
+
+.main_column .column_img {
+	background-position: center center;
+	background-size: cover;
+	height: 25%;
+}
+
+.main_column:first-child .column_img {
+	background-image: url("https://img.sbs.co.kr/newsnet/etv/upload/2019/10/11/30000635839_1280.jpg");
+}
+
+.main_column:nth-child(2) .column_img {
+	background-image: url("https://t1.daumcdn.net/cfile/tistory/995499415BA82B591F");
+}
+
+.main_column:nth-child(3) .column_img {
+	background-image: url("https://cdn.fanzeel.com/rep/302/5cb5497ac0476.jpg");
+}
+
+.main_column:last-child .column_img {
+	background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile25.uf.tistory.com%2Fimage%2F99AF4D385BB850B52AE637");
+}
+
+.main_column .column_number {
+	margin: 20px 5px;
+	font-size: 0.7em;
+}
