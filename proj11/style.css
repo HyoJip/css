@@ -1,0 +1,114 @@
+@import reset.css;
+
+:root {
+	--Gray: #95a5a6;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: #f4f4f4;
+}
+
+.nav_bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 30px;
+	background-color: #0e0e0e;
+	color: var(--Gray);
+	padding-top: 35px;
+	text-align: center;
+}
+
+.grid {
+	padding: 30px;
+	padding-right: 60px;
+	display: grid;
+	grid: repeat(auto-fit, minmax(30vh, 1fr)) / 3fr 2fr 2fr 2fr;
+	grid-gap: 20px;
+}
+
+.header_title-left {
+	grid-column: span 3;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.header_title-right {
+	font-weight: bold;
+	font-size: 3em;
+	text-align: right;
+}
+
+.grid_content .content_name {
+	font-weight: bold;
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+}
+
+.grid_content .content_body,
+.grid_content .item_lists {
+	padding: 20px 0;
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+.grid_content .item_list {
+	color: var(--Gray);
+}
+
+.grid_content .item_list.active {
+	color: black;
+}
+
+.grid .grid_content:nth-child(4) {
+	grid-area: span 2 / span 3;
+}
+
+.grid_content:nth-child(4) .projects_lists {
+	display: grid;
+	grid-gap: 15px;
+	grid: 1fr / repeat(auto-fit, 250px);
+}
+
+.projects_lists .item_column {
+	padding: 10px 0;
+}
+
+.item_column .item_img {
+	width: 100%;
+}
+
+.item_column .item_info {
+	line-height: 1.3em;
+	border-bottom: 2px solid black;
+}
+
+.item_column .item_info .item_title {
+	font-weight: bold;
+	margin: 5px 0;
+}
+
+.item_info .item_sub-title {
+	font-weight: bold;
+	color: var(--Gray);
+	margin: 5px 0 10px;
+}
+
+.item_info .published_date {
+	color: var(--Gray);
+	margin: 15px 0;
+}
+
+.item_info .icon {
+	display: block;
+	text-align: center;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 50%;
+	color: white;
+	background-color: black;
+	margin: 20px 0;
+}
