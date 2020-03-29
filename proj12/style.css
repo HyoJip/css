@@ -1,0 +1,165 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+body,
+html {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+:root {
+	--Gray: rgba(0, 0, 0, 0.15);
+	--fixed_header_width: 10vh;
+	--check_size: 1rem;
+	--check_margin_right: 45px;
+	--Gradient: linear-gradient(to right, #ad6bff, #74bbf9);
+	--Box_shodow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+body {
+	background-color: var(--Gray);
+	font-family: "Ubuntu", sans-serif;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: var(--Gradient);
+	color: white;
+	height: var(--fixed_header_width);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 20px 10px;
+	box-sizing: border-box;
+	box-shadow: var(--Box_shodow);
+}
+
+.header .header_title {
+	font-size: 0.8em;
+}
+
+.header_title span {
+	width: 17vw;
+	display: block;
+	letter-spacing: 6px;
+}
+
+.header_title span:last-child {
+	text-align: right;
+}
+
+.header_icons {
+	display: flex;
+	font-size: 1.3em;
+	justify-content: space-between;
+	width: 33vw;
+}
+
+.main_wrap {
+	padding: var(--fixed_header_width) 30px 40px;
+}
+
+.main_wrap .bg_fake {
+	background-color: white;
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 70vw;
+	margin: 0 auto;
+	height: 90vh;
+	box-shadow: var(--Box_shodow);
+	z-index: -1;
+}
+
+.main_header {
+	margin: 25px 0;
+}
+
+.main_header .main_title {
+	font-size: 3em;
+	letter-spacing: 5px;
+}
+
+.main_header .main_sub-title {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.7em;
+	padding: 15px 0;
+	margin-left: 50px;
+	border-bottom: 1px solid var(--Gray);
+}
+
+.main_sub-title i {
+	margin-right: var(--check_margin_right);
+	font-size: var(--check_size);
+}
+
+.main_songs {
+	display: grid;
+	grid-auto-rows: 50px;
+	grid-gap: 25px;
+}
+
+.main_songs .main_song {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-gap: 20px;
+	align-items: center;
+}
+
+.main_song .song_img {
+	width: 100%;
+	height: 100%;
+	box-shadow: var(--Box_shodow);
+}
+
+.main_song .song_info {
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+.main_song i {
+	font-size: var(--check_size);
+	margin-right: var(--check_margin_right);
+	justify-self: right;
+}
+
+.footer_btn {
+	all: unset;
+	background: var(--Gradient);
+	color: white;
+	font-size: 0.6em;
+	width: 50%;
+	height: 55px;
+	text-align: center;
+	letter-spacing: 3px;
+	position: fixed;
+	right: 20px;
+	bottom: 25px;
+	box-shadow: var(--Box_shodow);
+}
+
+.gray {
+	color: var(--Gray);
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.checked {
+	color: #ad6bff;
+	opacity: 0.8;
+}
