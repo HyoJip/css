@@ -44,7 +44,7 @@
 
 # project12
 
-![project 12 capture](./proj12/image.JPG)
+![project 12 capture](./proj12/image.png)
 
 # project13
 
@@ -52,4 +52,4 @@
 
 # project14
 
-![project 14 capture](./proj14/image.PNG)
+![project 14 capture](./proj14/image.png)
