@@ -1,0 +1,260 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+li,
+ul,
+body,
+html {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+:root {
+	--Gray: #95a5a6;
+}
+
+.nav_wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 50px;
+}
+
+.nav_wrap .nav_lists {
+	display: flex;
+	padding-left: 30px;
+}
+
+.nav_lists .nav_list {
+	padding-left: 80px;
+	text-transform: uppercase;
+}
+
+.header_wrap {
+	background-image: url("https://images.unsplash.com/photo-1511860810434-a92f84c6f01e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+	background-position: center center;
+	background-size: cover;
+	height: 400px;
+}
+
+.header_wrap .header_title {
+	font-size: 7em;
+	text-align: center;
+	line-height: 400px;
+	color: white;
+}
+
+.blog_wrap,
+.gallery_wrap {
+	position: relative;
+}
+
+.blog_title,
+.gallery_title {
+	font-size: 2em;
+	text-align: center;
+	margin: 60px 0;
+}
+
+.blog_title::after,
+.gallery_title:after {
+	content: "";
+	display: block;
+	width: 3vw;
+	margin: 30px auto;
+	border-bottom: 3px solid var(--Gray);
+}
+
+.blog_wrap .aside_wrap {
+	position: absolute;
+	writing-mode: vertical-lr;
+	right: 30px;
+	top: 0px;
+}
+
+.aside_wrap .aside_lists {
+	display: grid;
+	grid-gap: 25px;
+	grid-auto-flow: column;
+	text-transform: uppercase;
+}
+
+.blog_content {
+	width: 70vw;
+	display: grid;
+	grid: auto-flow 300px / 1fr 1fr;
+	grid-gap: 70px;
+	margin: 100px auto;
+}
+
+.blog_content .content_item.p {
+	font-family: "Cormorant Garamond", serif;
+	place-self: center;
+	width: 70%;
+}
+
+.blog_content .content_item::first-letter {
+	font-size: 4em;
+	color: black;
+	letter-spacing: 3px;
+	line-height: 0.9em;
+	float: left;
+}
+
+.blog_content .content_item:first-child {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.8em;
+}
+
+.content_item:first-child span {
+	margin: 50px 0;
+}
+
+.content_item:first-child button {
+	all: unset;
+	padding: 10px 25px;
+	border: 1px solid black;
+}
+
+.content_footer {
+	grid-column: span 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content_footer i,
+.fa-chevron-down {
+	border: 2px solid var(--Gray);
+	font-size: 0.7em;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 30px;
+}
+
+.content_footer .pages {
+	line-height: 20px;
+	color: black;
+	font-size: 0.7em;
+}
+
+.blog_content .content_item:last-child {
+	display: grid;
+	position: relative;
+	grid: 300px / auto-flow 1fr;
+	grid-column: span 2;
+	grid-gap: 70px;
+	font-size: 0.7em;
+}
+
+.item_img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: top center;
+}
+
+.aside_deco {
+	position: absolute;
+	transform: rotate(180deg);
+	writing-mode: vertical-rl;
+	left: -7vw;
+	top: 20px;
+}
+
+.item_desc-right {
+	position: absolute;
+	writing-mode: vertical-rl;
+	top: 0;
+	right: -20px;
+}
+
+.gallery_wrap .fa-chevron-down {
+	position: absolute;
+	top: 70px;
+	right: 0;
+	line-height: 20px;
+}
+
+.portfolio_wrap {
+	position: relative;
+	display: grid;
+	grid: 300px / auto-flow 35vw;
+	overflow: scroll;
+	padding-left: 15vw;
+	grid-gap: 40px;
+}
+
+.portfolio_wrap::-webkit-scrollbar {
+	display: none;
+}
+
+.portfolio_wrap .portfolio_navs {
+	position: absolute;
+	transform: rotate(180deg);
+	writing-mode: vertical-rl;
+
+	display: flex;
+	left: 7vw;
+}
+
+.portfolio_wrap .portfolio_nav {
+	margin: 15px 0;
+	font-size: 0.6em;
+}
+
+.portfolio_item .porfolio_img {
+	width: 100%;
+	height: 80%;
+	object-fit: cover;
+}
+
+.footer_wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 7vw;
+}
+
+.footer_input_box {
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	padding: 5px;
+}
+
+.footer_input_box input[type="email"],
+.footer_input_box button {
+	all: unset;
+	font-size: 0.6em;
+}
+
+.footer_input_box input[type="email"] {
+	flex: 1;
+}
+
+.footer_icons i {
+	margin: 5px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.gray {
+	color: var(--Gray);
+}
+
+.black {
+	color: black;
+}
