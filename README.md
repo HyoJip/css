@@ -1,7 +1,6 @@
 # CSS
-
-### HTML과 CSS를 사용해 직접 만듬
-### parcel과 Grid, Flex template 배움
+###### HTML과 CSS를 사용해 직접 만듬 
+###### parcel과 Grid, Flex template 배움
 
 ## project1
 
